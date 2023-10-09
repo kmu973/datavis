@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Face } from "./Face";
 
 function App() {
+  const width = 200;
+  const height = 200;
+  const centerX = width / 2;
+  const centerY = height / 2;
+  const strokeWidth = 10;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Face
+        width={width}
+        height={height}
+        centerX={centerX}
+        centerY={centerY}
+        strokeWidth={strokeWidth}
+      />
+      <Face
+        width={width}
+        height={height}
+        centerX={centerX}
+        centerY={centerY}
+        strokeWidth={strokeWidth}
+      />
     </div>
   );
 }
